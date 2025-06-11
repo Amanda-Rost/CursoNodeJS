@@ -1,0 +1,32 @@
+//REST Client é para testar as rotas que não podem ser testadas pelo navegador
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Video 02 - node",
+    "description": "Esse é o video 01",
+    "duration": 180
+}
+
+###
+
+
+GET http://localhost:3333/videos?search=node
+
+
+###
+
+PUT http://localhost:3333/videos/bb7003dc-5149-40ad-99b9-d6b0ec697794
+Content-Type: application/json
+
+{
+    "title": "Video 01 - Corrigido",
+    "description": "Esse é o video 01 corrigido",
+    "duration": 240
+}
+
+
+###
+
+DELETE  http://localhost:3333/videos/10c65aca-8092-415c-a0a2-2790b4aba7d2
+
